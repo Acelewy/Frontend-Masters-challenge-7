@@ -80,13 +80,67 @@ body {
 
 .previous {
     margin-right: -12px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 73%;
+    border-bottom-left-radius: 73%;
 }
 
 .next {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 73%;
+    border-bottom-right-radius: 73%;
 }
 
 .back1 {}
+
+@media screen and (min-width: 1000px) {
+    body {
+        padding: 73px 64px;
+        background-image: url('./images/pattern-bg.svg'), url('./images/pattern-curve.svg'), url('./images/pattern-quotes.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: right 20% top 38%, bottom left, top 25% left 18%;
+        background-size: auto 520px, 55% auto, 8% auto;
+    }
+    .first {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .txt {
+        width: 47vw;
+        text-align: left;
+        left: 1%;
+        transform: translateX(55px);
+        margin-left: 40px;
+    }
+    .image {
+        width: 46vw;
+        height: 46vw;
+        max-width: 389px;
+        margin-right: 182px;
+    }
+    .one {
+        margin-top: 5%;
+    }
+    .pic {
+        height: 60%;
+    }
+    .page {
+        padding-top: 43px;
+    }
+    .buttons {
+        top: 453px;
+        left: 61%;
+    }
+    .previous {
+        border-top-left-radius: 73%;
+        border-bottom-left-radius: 73%;
+    }
+    .next {
+        border-top-right-radius: 73%;
+        border-bottom-right-radius: 73%;
+    }
+    .desc {
+        display: flex;
+    }
+    .role {
+        margin-left: 20px;
+    }
+}
